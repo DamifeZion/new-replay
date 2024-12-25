@@ -1,0 +1,29 @@
+{
+	"exclude": ["tailwind.config.js"],
+	"compilerOptions": {
+		// Enable latest features
+		"lib": ["ESNext", "DOM"],
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"rootDir": "./src",
+		"outDir": "./dist",
+
+		// Allow JSX
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+
+		// Bundler mode
+		"moduleResolution": "bundler",
+
+		// Best practices
+		"strict": true,
+		"skipLibCheck": true,
+		"noFallthroughCasesInSwitch": true,
+
+		// Some stricter flags (disabled by default)
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noPropertyAccessFromIndexSignature": false
+	}
+}
